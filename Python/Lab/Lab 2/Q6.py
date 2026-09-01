@@ -10,22 +10,26 @@ Requirement: The solution should work efficiently as the number of log entries i
 lis = ["INFO", "ERROR", "WARNING", "INFO" , "ERROR", "INFO"]
 
 dic = {}
-for log in lis:
-    if log in dic.keys():
-        dic[log]+=1
-    else:
-        dic[log] = 1
+# for log in lis:
+#     if log in dic.keys():
+#         dic[log]+=1
+#     else:
+#         dic[log] = 1
+
+print("Frequency of logs: ")
+for key in lis:
+    dic[key]=dic.get(key, 0)+1
 print(dic)
 
 
 uniqueLogs = set(dic.keys())
+print("Unique logs are: ",uniqueLogs)
 
-
-
+print("Most frequently occuring log type is: ")
 freqLog = ""
 highest =0
 for i, j in dic.items():
     if j>highest:
         highest=j
         freqLog=i
-print(highest, freqLog)
+print(freqLog, ",",highest, "times")
