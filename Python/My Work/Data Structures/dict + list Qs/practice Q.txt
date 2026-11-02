@@ -1,0 +1,63 @@
+
+
+======================================================================
+FAST NATIONAL UNIVERSITY OF COMPUTER AND EMERGING SCIENCES
+Course: Programming for AI / PF
+Exam: Midterm II Practice Problem
+Topic: Nested Dictionaries, Lists, Loops & Data Processing
+Marks: 15 Marks
+======================================================================
+
+SCENARIO: STUDENT MARKS & GRADING ENGINE
+
+Aapko ek university portal ke liye automated grading system ka Python script 
+likhna hai. Input data ek nested structure me diya gaya hai.
+
+
+INPUT DATA STRUCTURE:
+----------------------
+courses_data = {
+    "AI_101": {
+        "instructor": "Dr. Zafar",
+        "students": [
+            {"id": "S1", "name": "Ali", "scores": [80, 85, 90]},
+            {"id": "S2", "name": "Sara", "scores": [40, 50, 45]},
+            {"id": "S3", "name": "Usman", "scores": [70, 75, 80]}
+        ]
+    },
+    "PF_102": {
+        "instructor": "Prof. Usman",
+        "students": [
+            {"id": "S1", "name": "Ali", "scores": [95, 90, 88]},
+            {"id": "S4", "name": "Hamza", "scores": [60, 65, 55]}
+        ]
+    }
+}
+
+
+REQUIREMENTS / TASKS TO PERFORM:
+--------------------------------
+
+1. CALCULATE AVERAGE & GRADE:
+   - Har student ke 'scores' list ka average calculate karein.
+   - Student dictionary ke andar 2 naye key-value pairs add/update karein:
+     * 'average' : Calculated average (rounded to 2 decimal places).
+     * 'status'  : Agar average >= 60 ho to "PASS", warna "FAIL".
+
+2. COURSE PERFORMANCE SUMMARY:
+   - Har course ke liye overall passing percentage calculate karein:
+     Pass Percentage = (Passed Students / Total Students in Course) * 100
+   - Screen par Course Name, Instructor Name, aur Pass Percentage print karein.
+
+3. GLOBAL FAIL LIST EXTRACTION:
+   - Ek nayi standalone list banayein: failed_students = []
+   - Is list me un tamam students ka (id, name) tuple add karein jo kisi bhi
+     course me "FAIL" hue hon (e.g., [("S2", "Sara")]).
+
+4. FINAL OUTPUT PRINTING:
+   - Updated 'courses_data' dictionary ko print karein.
+   - Final 'failed_students' list ko print karein.
+
+======================================================================
+INSTRUCTIONS: Code likhne ke baad yahan response me paste karein!
+======================================================================
