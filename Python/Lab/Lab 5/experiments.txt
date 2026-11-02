@@ -1,0 +1,6 @@
+1,Linear Regression,Housing,0.01,100
+2,Decision Tree,Diabetes,0.01,200
+4,Random Forest,Cancer,0.02,120
+1,Linear Regression,Housing,0.01,100
+2,Decision Tree,Diabetes,0.01,200
+4,Random Forest,Cancer,0.02,120
