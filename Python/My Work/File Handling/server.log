@@ -1,0 +1,5 @@
+INFO: Server started successfully
+ERROR: Database connection failed
+WARNING: Memory usage above 80%
+ERROR: Unauthorized access attempt
+INFO: User logged in
